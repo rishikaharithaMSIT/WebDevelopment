@@ -1,0 +1,119 @@
+body {
+	background-color: #9be5f3;
+}
+#first {
+	background-color: #9be5f3;
+}
+#logo {
+	width: 70px;
+}
+#agree {
+	font-size: 14px;
+	color : #1850a5;
+}
+#terms {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 8px;
+}
+#button {
+  width: 250px;
+  background-color: #1850a5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 2px 13px 5px -8px rgba(0,0,0,0.75);
+}
+#signup {
+	padding-top: 10px;
+	padding-left: 0px;
+	font-size: 15px;
+	color: #1850a5;
+	text-decoration: underline; 
+}
+.navbar {
+  background-color: #9be5f3;
+  min-height: 70px;
+}
+
+.glyphicon{
+	font-size: 25px;
+}
+.navbar-brand {
+  padding: 0 15px;
+  height: 50px;
+  line-height: 80px;
+}
+/*.active a:hover{
+	padding: 50 15px;
+	background-color: #9be5f3;
+	color: #000000;
+
+}*/
+.nav > li > a:hover{
+    background-color: #9be5f3;
+	color: #000000;
+}
+.nav > li {
+	padding-top: 30px;
+    font-size: 15px;
+    color: #1850a5;
+    font-weight: bold;
+    padding-right: 40px; 
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.8px;
+  border-color : #1850a5;
+} 
+
+/* Split the screen in half */
+.split {
+  height: 80%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+#grab {
+	color: #1850a5;
+	font-size: 70px;
+	font-weight: bolder;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #9be5f3;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.left {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Style the image inside the centered container, if needed */
