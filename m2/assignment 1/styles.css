@@ -1,0 +1,21 @@
+body {
+	background-color: #d9edf7;
+}
+.container-fluid {
+	border:thick solid #2d9bd2;
+    border-radius: 5px;
+    box-shadow: 0px -2px 35px 8px rgba(0,0,0,0.75);
+    margin :50px;
+    background-color: #FFFFFF;
+}
+/*div {
+  border: 1px solid black;
+}*/
+#name {
+	font-size: 40px;
+	font-weight: bold;
+}
+#subHeading {
+	font-size: 20px;
+	font-weight : bold;
+}
