@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/regular.css" integrity="sha384-aubIA90W7NxJ+Ly4QHAqo1JBSwQ0jejV75iHhj59KRwVjLVHjuhS3LkDAoa/ltO4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="javaScript.js"></script>
+
+</head>
+<body>
+  <!-- The overlay -------------------------------------------------------------------------->
+  <div id="myNav" class="overlay">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+    <div class="overlay-content">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">START QUIZ</a>
+    </div>
+  </div>
+<!-- ------------------------------------------------------------------------------------ -->
+  <nav id="navbar" class="navbar navbar-dark bg-primary">
+    <p id = "nav">LEARN BY DOING</p>
+  </nav>
+  <div class="container">    
+    <div class="container-fluid"><br>
+      <!--QUESTION BEGIN -------------------------------------->
+      <div class = "row">
+        <div class="col-lg-9">
+          <div class="alert alert-success">
+            <strong id="question">QUESTION 1</strong><br><br>
+            <p id="question">Each computer has a built-in instruction set known as ______ .</p><br>
+            <ul>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 1</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 2</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 3</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 4</label>
+                </div>
+              </li>
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="alert alert-info" id="alert">
+            <div>
+              <button type="button" class="btn btn-info">GET A HINT</button><br>
+            </div>
+          </div>
+          <div id="alert">
+            <div class="alert alert-danger alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 1!</strong>
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 2!</strong>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <!--QUESTION END -------------------------------------->
+      <!--QUESTION BEGIN -------------------------------------->
+      <div class = "row">
+        <div class="col-lg-9">
+          <div class="alert alert-success">
+            <strong id="question">QUESTION 2</strong><br><br>
+            <p id="question">Each computer has a built-in instruction set known as ______ .</p><br>
+            <ul>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 1</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 2</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 3</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 4</label>
+                </div>
+              </li>
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="alert alert-info" id="alert">
+            <div>
+              <button type="button" class="btn btn-info">GET A HINT</button><br>
+            </div>
+          </div>
+          <div id="alert">
+            <div class="alert alert-danger alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 1!</strong>
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 2!</strong>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <!--QUESTION END -------------------------------------->
+      <!--QUESTION BEGIN -------------------------------------->
+      <div class = "row">
+        <div class="col-lg-9">
+          <div class="alert alert-success">
+            <strong id="question">QUESTION 3</strong><br><br>
+            <p id="question">Each computer has a built-in instruction set known as ______ .</p><br>
+            <ul>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 1</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 2</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 3</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="radio">
+                  <label><input type="radio" name="optradio">This is Option 4</label>
+                </div>
+              </li>
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="alert alert-info" id="alert">
+            <div>
+              <button type="button" class="btn btn-info">GET A HINT</button><br>
+            </div>
+          </div>
+          <div id="alert">
+            <div class="alert alert-danger alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 1!</strong>
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>ALERT BOX 2!</strong>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <!--QUESTION END -------------------------------------->
+    </div>
+    <p id = "reset">RESET THE ACTIVITY</p>
+  </div>
+    
+
+<!-- JAVASCRIPT -------------------------------------------------------------------------- -->
+  <script>
+    window.onload = openNav();
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+</body>
+</html>
