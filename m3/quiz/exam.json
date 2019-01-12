@@ -1,0 +1,35 @@
+{
+	"quiz" : [
+	{
+		"question" : "HTML stands for Hyperlinks and Text Markup Language.",
+		"answer" : "true",
+		"hint1" : "this is hint 1",
+		"hint2" : "this is hint 2"
+	},
+	{
+		"question" : "<h6> is the largest heading tag.",
+		"answer" : "false",
+		"hint1" : "this is hint 1",
+		"hint2" : "this is hint 2"
+	},
+	{
+		"question" : "<break> is the tag to break line.",
+		"answer" : "false",
+		"hint1" : "this is hint 1",
+		"hint2" : "this is hint 2"
+	},
+	{
+		"question" : "<thead> is the tag to give table headings.",
+		"answer" : "false",
+		"hint1" : "this is hint 1",
+		"hint2" : "this is hint 2"
+	},
+	{
+		"question" : "<a> is used for hyperlinks.",
+		"answer" : "true",
+		"hint1" : "this is hint 1",
+		"hint2" : "this is hint 2"
+	}
+
+	]
+}
