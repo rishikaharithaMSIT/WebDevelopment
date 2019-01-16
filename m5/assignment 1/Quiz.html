@@ -32,63 +32,16 @@
   <nav id="navbar" class="navbar navbar-dark bg-primary">
     <p id = "nav">LEARN BY DOING</p>
   </nav>
-  <div class="container" id="main">    
-    <div class="container-fluid" id="myDiv"><br>
-      <!--QUESTION BEGIN -------------------------------------->
-      <div class = "row">
-        <div class="col-lg-9">
-          <div class="alert alert-success">
-            <strong id="question">QUESTION 1</strong><br><br>
-            <p id="question">Each computer has a built-in instruction set known as ______ .</p><br>
-            <ul>
-              <li class="list-group-item">
-                <div class="radio">
-                  <label><input type="radio" name="optradio">This is Option 1</label>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="radio">
-                  <label><input type="radio" name="optradio">This is Option 2</label>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="radio">
-                  <label><input type="radio" name="optradio">This is Option 3</label>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="radio">
-                  <label><input type="radio" name="optradio">This is Option 4</label>
-                </div>
-              </li>
-            </ul>        
-          </div>
-        </div>
-         
-          <div id="alert">
-
-            <div id="alertbox1" style="display:none;" class="alert alert-warning alert-dismissible">
-              <strong>ALERT BOX 1!</strong>
-            </div>
-
-            <div id="alertbox2" class="alert alert-warning alert-dismissible">
-              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-              <strong>ALERT BOX 2!</strong>
-            </div>
-
-          </div>
-        </div>      
-      </div>
-      <!--QUESTION END -------------------------------------->
-      
-    </div>
-    <p id = "reset">RESET THE ACTIVITY</p>
+  <div class="container-fluid" id="main">    
+    
   </div>
+  <div><p id = "reset" onclick="reloadPage()">RESET THIS PAGE</p></div>
   
     
 
 <!-- JAVASCRIPT -------------------------------------------------------------------------- -->
-<script>
+
+  <script>
     window.onload = openNav();
     function openNav() {
       document.getElementById("myNav").style.width = "100%";
@@ -98,8 +51,6 @@
       document.getElementById("myNav").style.width = "0%";
     }
   </script>
-<script type="text/javascript" src="javaScript.js"></script>
-  
-
+  <script type="text/javascript" src="javaScript.js"></script>
 </body>
 </html>

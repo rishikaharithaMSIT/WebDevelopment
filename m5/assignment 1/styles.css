@@ -5,15 +5,12 @@ body {
 	background-color: #d9edf7;
 	border:thick solid #337ab7;
 }
-.list-group-item {
-	background-color: #f0f8ed;
-	max-height: 50px;
-	margin-bottom: 10px;
-}
-
-#list-group-item2 {
-	background-color: #eaf5fb;
-	max-height: 50px;
+#reset {
+  text-align: right;
+  color: #337ab7;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 #navbar {
 	min-width: 100%;
@@ -24,13 +21,7 @@ body {
 	font-color :#FFFFFF;
 	margin-left: 10px;
 }
-#question {
-	font-size: 20px;
-	font-color:#3c763d;
-}
-#alert {
-	text-align: center;
-}
+
 .container-fluid {
 	border:medium solid #FFFFFF;
     /*border-radius: 5px;*/
@@ -38,19 +29,8 @@ body {
     margin :30px;
     background-color: #FFFFFF;
 }
-#reset {
-	text-align: right;
-	font-weight: bolder;
-	font-size: 30px;
-	text-decoration:underline;
-	color: #337ab7;
-}
-.container {
-	min-width: 100%;
-	/*border-right:thick solid #337ab7;
-	border-left:thick solid #337ab7;
-	border-bottom:thick solid #337ab7;*/
-}
+
+
 /* for overlay*/
 /* The Overlay (background) */
 .overlay {
