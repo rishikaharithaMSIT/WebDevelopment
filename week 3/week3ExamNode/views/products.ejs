@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>PRODUCTS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="/assets/prod-list.js"></script>
+        <link rel="stylesheet" href="/assets/prod.css">
+    </head>
+      <body>
+          <div class = "container">
+                <div class="row">
+                        <div class="col-lg-2">
+                            <p id="heading">PRODUCT TITLE</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p id="heading">PRODUCT DESCRIPTION</p>    
+                        </div>                
+                        <div class="col-lg-2">
+                            <p id="heading">IMAGE</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p id="heading">QUANTITY</p>    
+                        </div>                        
+                        <div class="col-lg-4">
+                            
+                        </div>
+                    </div>
+                    <hr>    
+            <% for(var i = 0; i < products.length; i++) { %>
+            <div class="row">
+                <div class="col-lg-2">
+                    <p id="title"><%= products[i].title %></p>
+                </div>
+                <div class="col-lg-2">
+                    <p><%= products[i].description %></p>    
+                </div>                
+                <div class="col-lg-2">
+                    <img src="/assets/<%=products[i].image %>" alt="picture" width= "100%">
+                </div>
+                <div class="col-lg-2">
+                    <p><%=products[i].quantity %> unit/s</p>    
+                </div>
+                
+                <div class="col-lg-4">
+                    <% var name = products[i].title.replace(/ /g, "-");%>
+                    <form action="/product/<%=name%>" method="POST">
+                        <button type = "submit" class="btn btn-primary">EDIT</button>
+                    </form>
+                    <form action="/productdel/<%= name %>" method="POST">
+                        <button type="submit" class="btn btn-danger">DELETE</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        <% } %>
+    </div>        
+      </body>
+</html>

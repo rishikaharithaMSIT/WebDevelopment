@@ -1,0 +1,53 @@
+<html>
+    <head>
+            <title>PRODUCTS</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script src="/assets/prod-list.js"></script>
+            <link rel="stylesheet" href="/assets/prod.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <% for(var i = 0; i < products.length; i++) { 
+                var name = products[i].title.replace(/ /g, "-");%>
+                <h2> EDIT DETAILS OF <%= products[i].title %> </h2>
+                <form action="/productDetails/<%= name %>" method="POST">
+
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1" id="label">TITLE </div>
+                        <div class="col-lg-6"><input class="form-control" type="text" value = "<%= products[i].title %>" name="title"></div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-1" id="label">ABOUT </div>
+                            <div class="col-lg-6"><input class="form-control" type="text" value = "<%= products[i].description %>" name="description"></div>
+                            <div class="col-lg-4"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-1" id="label">QUANTITY</div>
+                            <div class="col-lg-6"><input class="form-control" type="text" value = "<%= products[i].quantity %>" name="quantity"></div>
+                            <div class="col-lg-4"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-1"><button type="submit" class="btn btn-primary">EDIT</button> </div>
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-4"></div>
+                    </div>  
+                </form> 
+                
+            
+        <% } %> 
+    </div>
+    </body>
+</html>
