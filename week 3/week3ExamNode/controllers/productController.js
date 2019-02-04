@@ -23,7 +23,9 @@ var Prod = mongoose.model('products', productSchema);
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 
 module.exports = function(app) {
-
+    app.get('/', function(req, res){
+        return res.redirect('/Products');      
+    });
     app.get('/products', function(req, res){
         Prod.find({}, function(err,data){
             if(err) throw err;
